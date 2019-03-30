@@ -1,2 +1,7 @@
-elpa/*
 recentf
+auto-save-list/*
+*.elc
+#*#
+*~
+abbrev_defs
+bookmarks

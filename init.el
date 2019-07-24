@@ -66,4 +66,4 @@
 (global-linum-mode 1)
 
 ;; cperl-mode is preferred to perl-mode
-)(defalias 'perl-mode 'cperl-mode)
+(defalias 'perl-mode 'cperl-mode)

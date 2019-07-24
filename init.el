@@ -61,4 +61,9 @@
 (setq make-backup-files nil) ; stop creating backup~ files
 (setq auto-save-default nil) ; stop creating #autosave# files
 
-;;
+;; Enables visual (wrapping of lines) and linum (line number) modes by default
+(global-visual-line-mode t)
+(global-linum-mode 1)
+
+;; cperl-mode is preferred to perl-mode
+(defalias 'perl-mode 'cperl-mode)

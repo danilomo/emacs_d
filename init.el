@@ -21,7 +21,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (use-package darcula-theme))))
+ '(package-selected-packages
+   (quote
+    (terraform-mode fill-column-indicator go-mode use-package darcula-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -59,4 +61,9 @@
 (setq make-backup-files nil) ; stop creating backup~ files
 (setq auto-save-default nil) ; stop creating #autosave# files
 
-;;
+;; Enables visual (wrapping of lines) and linum (line number) modes by default
+(global-visual-line-mode t)
+(global-linum-mode 1)
+
+;; cperl-mode is preferred to perl-mode
+(defalias 'perl-mode 'cperl-mode)
